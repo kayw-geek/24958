@@ -1,3 +1,3 @@
-# Renovate bug for Lockfile maintenance and matchCurrentVersion
+# Renovate bug for Lockfile maintenance
 
-A reproduction case for reporting a possible bug with configuring Renovate to enable lockfile maintenance PRs and having a `packageRule` with `matchCurrentVersion`.
+A reproduction case for reporting a possible bug with configuring Renovate to enable lockfile maintenance PRs.

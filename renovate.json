@@ -1,0 +1,23 @@
+{
+    "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+    "extends": [
+        "config:recommended"
+    ],
+    "ignoreUnstable": true,
+    "enabledManagers": ["composer"],
+    "lockFileMaintenance": {
+        "enabled": true,
+        "schedule": ["at any time"]
+    },
+    "rangeStrategy": "update-lockfile",
+    "packageRules": [
+        {
+            "matchManagers": ["composer"],
+            "groupName": "lock file"
+        },
+        {
+            "matchUpdateTypes": ["minor","major","patch"],
+            "enabled": false
+        }
+    ]
+}
